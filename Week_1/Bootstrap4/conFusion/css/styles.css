@@ -10,6 +10,31 @@
     min-height:400px;
 }
 
+.row-content-noborder {
+    margin:0px auto;
+    padding:50px 10px;
+    min-height:400px;
+}
+
+.nospace-paragraph {
+    margin:-20px auto;
+    padding:0px 0px;
+}
+.row-content-about {
+    margin:0px auto;
+    padding:0px 0px;
+    border-bottom:1px ridge;
+    min-height:000px;
+}
+
+.row-content-first {
+    margin:0px auto;
+    padding:50px 0px;
+    border-bottom:1px ridge;
+    min-height:000px;
+}
+
+
 .footer {
     background-color: #D1C4E9;
     margin:0px auto;
@@ -27,4 +52,13 @@
     font-size: 80%;
     margin:0px;
     columns: #0f0f0f;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+    z-index:0 ;
+}
+
+.navbar-dark {
+    background-color: #512DA8;
 }
