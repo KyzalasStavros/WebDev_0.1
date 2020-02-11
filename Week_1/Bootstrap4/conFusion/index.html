@@ -40,24 +40,33 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm align-self-center">
+
+                <div class="col-12 col-sm-3 align-self-center ">
                     <img src="img/logo.png" class="img-fluid" alt="aklafto-logo">
                 </div>
+            
+                <div class="col-xs-12 col-sm-3">
+                    <p style="padding:20px;"></p>
+                <p>
+                    <a id="reserveBtn" type="button" class="btn btn-warning btn-block" role="button" style="color:black">Reserve Table</a>
+                </p>
+            </div>
+            </div>
             </div>
         </div>
     </header>
 
     <div class="container">
         <div class="row row-content align-items-center">
-            <div class="col12 col-sm-4 orfer-sm-last col-md-3">
+            <div class="col12 col-sm-4 order-sm-last col-md-3">
                 <h3>Our Lipsmacking Culinary Creations</h3>
             </div>
             <div class="col col-sm order-sm-first col-md">
                 <div class="media">
                     <img class="d-flex mr-3 img-thumbnail align-self-center" src="img/uthappizza.png" alt="utapize">
                     <div class="media-body">
-                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger">HOT</span> <span class="badge badge-pill badge-secondary">$4.99</span></h2>
-                    <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
+                    <h2 class="mt-0">Uthappizza <span class="badge badge-danger"> HOT </span> <span class="badge badge-pill badge-secondary"> $4.99 </span></h2>
+                    <div  class="d-none d-md-block"><p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p></div>
                     </div>
                 </div>
             </div>
@@ -69,8 +78,14 @@
                 <h3>This Month's Promotions</h3>
             </div>
             <div class="col col-sm col-md">
-                <h2>Weekend Grand Buffet</h2>
-                <p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p>
+                <div class="media">
+                    <div class="media-body">
+                    <h2>Weekend Grand Buffet <span class="badge badge-danger">New</span></h2>
+                    <div  class="d-none d-md-block"><p>Featuring mouthwatering combinations with a choice of five different salads, six enticing appetizers, six main entrees and five choicest desserts. Free flowing bubbly and soft drinks. All for just $19.99 per person </p> </div>               
+                    </div>
+         
+                <img class="d-flex order-last img-thumbnail align-self-center" src="img/buffet.png" alt="utapize">
+                </div>
             </div>
         </div>
 
@@ -84,12 +99,70 @@
                     <div class="media-body">
                 <h2>Alberto Somayya</h2>
                 <h4>Executive Chef</h4>
-                <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p>
+                <div  class="d-none d-md-block"><p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. </p></div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
+    <div class="row row-content align-items-center justify-content-center" id="reservationDiv" role="form">
+        <div class="col-12 col-sm-8">
+            <div class="card">
+                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
+                <div class="card-body">
+                    <form class="form-horizontal" id="reservation-form" role="form">
+                        <div class="form-group row">
+                            <label for="guests" class="col-12 col-sm-12 col-md-2 col-form-label">Number of Guests</label>
+                            <div class="form-check form-check-inline col-12 col-sm-12 col-md-8">
+                                <div class="col-sm-8">
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> 4
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5"> 5
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6"> 6
+                                    </label>
+                                </div> <!-- col-sm-10 -->
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="date" class="col-12 col-sm-12 col-md-2 col-form-label">Date and Time</label>
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                </div>                                   
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-md-2 col-md-10">
+                                <button type="submit" class="btn btn-primary">Reserve</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+
 
     <footer class="footer">
         <div class="container">
