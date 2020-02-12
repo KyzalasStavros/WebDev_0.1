@@ -107,46 +107,51 @@
     </div>
 
 
-    <div class="row row-content align-items-center justify-content-center" id="reservationDiv" role="form">
+    <div class="row row-content align-items-center justify-content-center" id="reservationDiv">
         <div class="col-12 col-sm-8">
             <div class="card">
                 <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
                 <div class="card-body">
-                    <form class="form-horizontal" id="reservation-form" role="form">
+                    <form>
                         <div class="form-group row">
                             <label for="guests" class="col-12 col-sm-12 col-md-2 col-form-label">Number of Guests</label>
-                            <div class="form-check form-check-inline col-12 col-sm-12 col-md-8">
-                                <div class="col-sm-8">
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio4" value="option4"> 4
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio5" value="option5"> 5
-                                    </label>
-                                    <label class="radio-inline">
-                                        <input type="radio" name="inlineRadioOptions" id="inlineRadio6" value="option6"> 6
-                                    </label>
-                                </div> <!-- col-sm-10 -->
-                            </div>
+                                <label class="custom-control custom-radio">
+                                    <input type="radio"  id="guest1" name="guests" value="">  
+                                    <span class="custom-control-description">1</span>
+                                </label>
+                                <label class="custom-control custom-radio">
+                                    <input type="radio"  id="guest2" name="guests" value="">
+                                    <span class="custom-control-description">2</span>
+                                </label>
+                                <label class="custom-control custom-radio">
+                                    <input type="radio"  id="guest3" name="guests" value="">
+                                    <span class="custom-control-description">3</span>
+                                </label>
+                                <label class="custom-control custom-radio">
+                                    <input type="radio"  id="guest4" name="guests" value="">
+                                    <span class="custom-control-description">4</span>
+                                </label>
+                                <label class="custom-control custom-radio">
+                                    <input type="radio"  id="guest5" name="guests" value="">
+                                    <span class="custom-control-description">5</span>
+                                </label>
+                                <label class="custom-control custom-radio">
+                                    <input type="radio"  id="guest6" name="guests" value="">
+                                    <span class="custom-control-description">6</span>
+                                </label>
                         </div>
+
                         <div class="form-group row">
                             <label for="date" class="col-12 col-sm-12 col-md-2 col-form-label">Date and Time</label>
                             <div class="col-12 col-sm-12 col-md-4">
                                 <div class="input-group">
+                                 
                                     <input type="text" class="form-control" id="date" name="date" placeholder="Date">
                                 </div>                                   
                             </div>
                             <div class="col-12 col-sm-12 col-md-4">
                                 <div class="input-group">
+                                
                                     <input type="text" class="form-control" id="time" name="time" placeholder="Time">
                                 </div>
                             </div>
