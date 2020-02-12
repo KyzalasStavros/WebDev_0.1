@@ -77,6 +77,85 @@
         </div>
     </div>
 
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve Table </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group row">
+                                <label for="guests" class="col-12 col-sm-12 col-md-2 col-form-label">Number of Guests</label>
+                                    <label class="custom-control custom-radio">
+                                        <input type="radio"  id="guest1" name="guests" value="">  
+                                        <span class="custom-control-description">1</span>
+                                    </label>
+                                    <label class="custom-control custom-radio">
+                                        <input type="radio"  id="guest2" name="guests" value="">
+                                        <span class="custom-control-description">2</span>
+                                    </label>
+                                    <label class="custom-control custom-radio">
+                                        <input type="radio"  id="guest3" name="guests" value="">
+                                        <span class="custom-control-description">3</span>
+                                    </label>
+                                    <label class="custom-control custom-radio">
+                                        <input type="radio"  id="guest4" name="guests" value="">
+                                        <span class="custom-control-description">4</span>
+                                    </label>
+                                    <label class="custom-control custom-radio">
+                                        <input type="radio"  id="guest5" name="guests" value="">
+                                        <span class="custom-control-description">5</span>
+                                    </label>
+                                    <label class="custom-control custom-radio">
+                                        <input type="radio"  id="guest6" name="guests" value="">
+                                        <span class="custom-control-description">6</span>
+                                    </label>
+                            </div>
+                            
+                            <div class="form-group row">
+                            <label for="guests" class="col-12 col-sm-12 col-md-2 col-form-label">Section</label>
+                                <div class="btn-group btn-group-toggle col-12 col-md-4" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                    <input type="radio" name="options" id="option1" autocomplete="off" checked> NonSmoking
+                                    </label>
+                                    <label class="btn btn-danger">
+                                    <input type="radio" name="options" id="option2" autocomplete="off"> SmokingCancer
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <label for="date" class="col-12 col-sm-12 col-md-2 col-form-label">Date and Time</label>
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <div class="input-group">
+                                        
+                                        <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                                    </div>                                   
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-4">
+                                    <div class="input-group">
+                                    
+                                        <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="offset-md-2 col-md-10">
+                                    <button type="submit" class="btn btn-secondary">Cancel</button>
+                                    <button type="submit" class="btn btn-primary">Reserve</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class='jumbotron'>
         <div class="container">
             <div class="row row-header">
@@ -92,7 +171,7 @@
                 <div class="col-xs-12 col-sm-3">
                     <p style="padding:20px;"></p>
                 <p>
-                    <a id="reserveBtn" type="button" class="btn btn-warning btn-block nav-link" role="button" data-target="#reserveform" data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+4550184803</strong></br>" data-placement="bottom" style="color:black">Reserve Table</a>
+                    <a id="reserveBtn" type="button" class="btn btn-warning btn-block nav-link" role="button" data-target="#reserveModal" data-toggle="modal" data-html="true" title="Or Call us at <br><strong>+4550184803</strong></br>" data-placement="bottom" style="color:black">Reserve Table</a>
                 </p>
             </div>
             </div>
@@ -141,7 +220,6 @@
                         <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         </a>
-                        
                     
                     </div>
                 </div>
@@ -197,7 +275,9 @@
         </div>
     </div>
 
-
+    <div class="row row-header">
+        <a id="reserveform"></a>
+    </div>
     <div class="row row-content align-items-center justify-content-center" id="reserveform">
         <div class="col-12 col-sm-8">
             <div class="card">
@@ -305,11 +385,12 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
+    <!--<script>
         $(document).ready(function() {
             $('[data-toggle="tooltip"]').tooltip();
         });
         </script>
+    -->
 </body>
 
 </html>
