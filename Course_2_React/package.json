@@ -1,11 +1,19 @@
 {
   "name": "course_2_react",
   "version": "1.0.0",
+  "description": "\"this is a test for npm 2 lrn git n node\"",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start" : "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite" : "lite-server"
   },
-  "author": "",
+  "keywords": [
+    "doctor"
+  ],
+  "author": "doctor",
   "license": "ISC",
-  "description": ""
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
